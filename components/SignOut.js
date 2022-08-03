@@ -1,0 +1,20 @@
+import { useMutation, useQuery } from '@apollo/client/react';
+import {
+  CURRENT_USER_QUERY,
+  SIGNOUT_MUTATION,
+} from '../lib/queries/userQueries';
+
+const SignOut = () => {
+  const [signout] = useMutation(SIGNOUT_MUTATION, {
+    refetchQueries: [{ query: CURRENT_USER_QUERY }],
+  });
+  const { data, loading, error } = useQuery(CURRENT_USER_QUERY);
+  return (
+    <>
+      <button className='signout-button' type="button" onClick={signout}> Sign out
+      </button>
+    </>
+  );
+};
+
+export default SignOut;
