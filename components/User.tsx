@@ -33,6 +33,7 @@ export interface Image2 {
 
 const useUser = () => {
   const { data } = useQuery(CURRENT_USER_QUERY);
+  console.log("from user", data);
   const user: User = data?.authenticatedItem;
   const getUser = () => {
     return user;
