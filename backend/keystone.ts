@@ -15,6 +15,7 @@ import { withAuth, session } from './auth';
 
 // Database URL from .env
 const databaseUrl = process.env.DATABASE_URL || "capybara string";
+const shadowDatabaseUrl = process.env.SHADOW_DATABASE_URL || "oi";
 // lists schema
 import { Product } from './schemas/Products';
 import { User } from './schemas/User';
@@ -29,18 +30,19 @@ export default withAuth(
   // Using the config function helps typescript guide you to the available options.e
   config({
     server: {
-      cors: { origin: ['http://localhost:3000'], credentials: true },
-      port: 7777,
+      cors: { origin: ['https://kapymarket.web.app/'], credentials: true },
+      port: 3000,
       maxFileSize: 200 * 1024 * 1024,
       healthCheck: true,
     },
     db: {
       provider: 'postgresql',
       url: databaseUrl,
+      shadowDatabaseUrl,
       onConnect: async context => { },
       // Optional advanced configuration
       // enableLogging: true,
-      useMigrations: true,
+      useMigrations: false,
       idField: { kind: 'uuid' }
     },
     lists: {
