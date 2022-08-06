@@ -5,6 +5,9 @@
     "build": "next build && next export",
     "start": "next start"
   },
+  "engines": {
+    "node": "16.13.0"
+  },
   "dependencies": {
     "@apollo/link-error": "^2.0.0-beta.3",
     "@apollo/react-ssr": "^4.0.0",
