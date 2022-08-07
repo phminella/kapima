@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SingleProductStyle = styled.div`
 position: relative;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 55% 45%;
 justify-content: center;
 background:white;
 gap: 2rem;
@@ -20,7 +20,6 @@ margin-top:60px;
     right:10px;
     top:10px;
     @media screen and (max-width: 860px) { 
-    background:white;
     border-radius:50%;
     width:30px;
     height:30px;
