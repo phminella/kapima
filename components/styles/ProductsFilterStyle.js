@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const ProductsFilterStyle = styled.div`
-background:#f7145f;
+background:#e40c5d;
 border-radius:5px;
 padding:10px;
 display:grid;

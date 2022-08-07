@@ -28,7 +28,7 @@ ul {
         }
         }
         &.active-page {
-        background:#f7145f;
+        background:#e40c5d;
         a { 
             color:white; 
             &:hover {
