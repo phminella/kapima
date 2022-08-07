@@ -1,8 +1,8 @@
-import { useMutation, useQuery } from '@apollo/client/react';
+import { useMutation, useQuery } from "@apollo/client/react";
 import {
   CURRENT_USER_QUERY,
   SIGNOUT_MUTATION,
-} from '../lib/queries/userQueries';
+} from "../lib/queries/userQueries";
 
 const SignOut = () => {
   const [signout] = useMutation(SIGNOUT_MUTATION, {
@@ -11,8 +11,15 @@ const SignOut = () => {
   const { data, loading, error } = useQuery(CURRENT_USER_QUERY);
   return (
     <>
-      <button className='signout-button' type="button" onClick={signout}> Sign out
-      </button>
+      {loading ? (
+        <button className="signout-button" type="button">
+          <img src="../img/icon-spinner.svg" />
+        </button>
+      ) : (
+        <button className="signout-button" type="button" onClick={signout}>
+          Sign out
+        </button>
+      )}
     </>
   );
 };

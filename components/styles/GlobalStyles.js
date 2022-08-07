@@ -48,8 +48,8 @@ body {
   min-height:100vh!important;
   font-size:clamp(1.3rem, 2vw, 1.5rem);
   /* CSS gradients */
-  background-image: linear-gradient(transparent, white 65%), url(../img/index-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: linear-gradient(transparent, white 65%), url(../img/index-bg.jpg); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 `;
