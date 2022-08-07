@@ -8,6 +8,7 @@ justify-content: center;
 background:white;
 gap: 2rem;
 z-index: 1;
+overflow:hidden;
 @media screen and (max-width: 860px) { 
 grid-template-columns: 1fr;
 margin-top:60px;
@@ -28,7 +29,7 @@ margin-top:60px;
 .product-image {
 img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 }
 .product-details {
