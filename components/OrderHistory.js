@@ -33,7 +33,6 @@ const OrderHistory = ({ userId }) => {
             userId: userId
         }
     });
-    console.log(data);
     if (loading) return <p><img width={50}src="../img/icon-spinner.svg" /></p>;
     return (
         <OrderHistoryStyle>

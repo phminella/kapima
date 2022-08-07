@@ -28,6 +28,9 @@ export const NavStyle = styled.nav`
           border: 1px solid white;
           color: white;
           padding: 5px 10px;
+          &:hover {
+            background:#f7145f;
+          }
         }
         .account-details {
           position: absolute;
