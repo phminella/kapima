@@ -48,6 +48,6 @@ body {
   min-height:100vh!important;
   font-size:clamp(1.3rem, 2vw, 1.5rem);
   background: rgb(247,20,95);
-background: linear-gradient(180deg, rgba(247,20,95,1) 0%, rgba(255,255,255,1) 100%);
+background: linear-gradient(180deg, rgba(247,20,95,1) 28%, rgba(255,255,255,1) 79%);
 }
 `;
