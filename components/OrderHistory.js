@@ -33,12 +33,11 @@ const OrderHistory = ({ userId }) => {
             userId: userId
         }
     });
-    console.log(data);
     if (loading) return <p>loading...</p>;
     return (
         <OrderHistoryStyle>
             <h1>Order History <Link href="/">Back to shopping!</Link></h1>
-            {!data.length && !loading && <><p>You still haven't made your first purchase!</p>
+            {data.length===0 && <><p>You still haven't made your first purchase!</p>
                 <Link href="/">Lets change this!</Link></>
             }
             <ul>
