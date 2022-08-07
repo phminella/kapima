@@ -25,11 +25,6 @@ margin-top:60px;
     height:30px;
  }
 }
-.product-image {
-img {
-  max-height:400px;
-}
-}
 .product-details {
     padding:20px;
     p {
