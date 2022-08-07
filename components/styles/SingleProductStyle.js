@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const SingleProductStyle = styled.div`
 position: relative;
 display: grid;
-grid-template-columns: 55% 45%;
+grid-template-columns: 1fr 1fr;
 justify-content: center;
 background:white;
-gap: 2rem;
 z-index: 1;
 overflow:hidden;
 @media screen and (max-width: 860px) { 
