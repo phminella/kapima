@@ -5,13 +5,13 @@ import {
 } from "../lib/queries/userQueries";
 
 const SignOut = () => {
-  const [signout] = useMutation(SIGNOUT_MUTATION, {
+  const [signout, { loading: signOutLoading }] = useMutation(SIGNOUT_MUTATION, {
     refetchQueries: [{ query: CURRENT_USER_QUERY }],
   });
   const { data, loading, error } = useQuery(CURRENT_USER_QUERY);
   return (
     <>
-      {loading ? (
+      {signOutLoading ? (
         <button className="signout-button" type="button">
           <img src="../img/icon-spinner.svg" />
         </button>

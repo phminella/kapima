@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 :root {
   //
@@ -47,6 +47,7 @@ body {
   margin:0;
   min-height:100vh!important;
   font-size:clamp(1.3rem, 2vw, 1.5rem);
+  background-color: greenyellow;
   /* CSS gradients */
   /* background-image: linear-gradient(transparent, white 65%), url(../img/index-bg.jpg); */
   /* background-size: cover; */
