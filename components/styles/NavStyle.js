@@ -107,7 +107,7 @@ export const NavStyle = styled.nav`
               color: white;
               padding: 5px;
               img {
-                height: 28px;
+                height: 20px;
               }
               &:hover {
                 background: #c00442;
