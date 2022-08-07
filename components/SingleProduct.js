@@ -47,9 +47,16 @@ const SingleProduct = ({ id }) => {
   };
   if (loading)
     return (
-      <div style={{ minHeight: "80vh" }}>
+      <div
+        style={{
+          minHeight: "80vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <p>
-          <img width={50} src="../img/icon-spinner.svg" />
+          <img width={150} src="../img/icon-spinner.svg" />
         </p>
       </div>
     );
