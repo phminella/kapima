@@ -10,7 +10,7 @@ min-height:60vh;
 }
 ul {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
   `;
