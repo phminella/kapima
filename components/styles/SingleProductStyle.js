@@ -25,6 +25,11 @@ margin-top:60px;
     height:30px;
  }
 }
+.product-image {
+img {
+  width:100%;
+}
+}
 .product-details {
     padding:20px;
     p {
