@@ -30,7 +30,6 @@ const SignIn = () => {
             emailInput?.current?.focus();
         } else {
             const res = await signIn();
-            console.log("from res", res);
             if (res.data?.authenticateUserWithPassword?.message === "Authentication failed.") {
                 document.getElementById("password").focus();
             }

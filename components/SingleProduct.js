@@ -46,7 +46,7 @@ const SingleProduct = ({ id }) => {
       });
     }
   }
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p><img width={50}src="../img/icon-spinner.svg" /></p>;
   const product = data.product;
   return (
     <SingleProductStyle>

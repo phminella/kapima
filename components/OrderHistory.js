@@ -33,7 +33,8 @@ const OrderHistory = ({ userId }) => {
             userId: userId
         }
     });
-    if (loading) return <p>loading...</p>;
+    console.log(data);
+    if (loading) return <p><img width={50}src="../img/icon-spinner.svg" /></p>;
     return (
         <OrderHistoryStyle>
             <h1>Order History <Link href="/">Back to shopping!</Link></h1>
