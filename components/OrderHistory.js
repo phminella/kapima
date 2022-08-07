@@ -37,7 +37,7 @@ const OrderHistory = ({ userId }) => {
     return (
       <div style={{ minHeight: "80vh", display:"flex", justifyContent:"center", alignItems:"center" }}>
         <p>
-          <img width={150} src="../img/icon-spinner.svg" />
+          <img width={80} src="../img/icon-spinner.svg" />
         </p>
       </div>
     );

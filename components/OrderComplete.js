@@ -21,7 +21,7 @@ const OrderComplete = ({ orderId }) => {
         }}
       >
         <p>
-          <img width={150} src="../img/icon-spinner.svg" />
+          <img width={80} src="../img/icon-spinner.svg" />
         </p>
       </div>
     );
