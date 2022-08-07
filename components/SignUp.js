@@ -19,10 +19,6 @@ const SignUp = () => {
             name: inputs.name,
             email: inputs.email,
             password: inputs.password
-        },
-        update(cache, result) {
-            //@ts-ignore
-            cache.evict(cache.identify(result.data.user));
         }
     })
     const emailInput = useRef();
