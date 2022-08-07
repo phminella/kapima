@@ -27,8 +27,7 @@ margin-top:60px;
 }
 .product-image {
 img {
-  width: 100%;
-  object-fit: cover;
+  height: 100%;
 }
 }
 .product-details {
