@@ -38,7 +38,7 @@ const OrderHistory = ({ userId }) => {
     return (
         <OrderHistoryStyle>
             <h1>Order History <Link href="/">Back to shopping!</Link></h1>
-            {!data.length && <><p>You still haven't made your first purchase!</p>
+            {!data.length && !loading && <><p>You still haven't made your first purchase!</p>
                 <Link href="/">Lets change this!</Link></>
             }
             <ul>

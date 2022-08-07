@@ -85,11 +85,12 @@ ul#nav-right {
                 //
                 .close-account-button {
                 position: absolute;
-                top: 0px;
-                right: 0px;
+                top: 3px;
+                right: 3px;
                 background: none;
                 border: none;
                 color: black;
+                background:green;
                 }
                 //
                 // Signout
