@@ -27,7 +27,7 @@ margin-top:60px;
 }
 .product-image {
 img {
-  height: 100%;
+  max-height:400px;
 }
 }
 .product-details {
